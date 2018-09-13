@@ -9,8 +9,8 @@ const server = http.createServer(app).listen
 (8080, function (err) {
   if (err) {
     console.log(err);
-https://Quarter
-hi
-     
-}
-} });
+  } else {
+    const host = server.address().address;
+    const port = server.address()
+    console.log(`Server listening on ${host}:${port}`);
+  }});
